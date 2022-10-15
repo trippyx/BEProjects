@@ -6,5 +6,6 @@ app.get('/hello',(req,res)=>{
 });
 
 app.listen(process.env.PORT,()=>{
+    console.log('Api hit recived')
     console.log('server started');
 });
