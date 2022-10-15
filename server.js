@@ -8,7 +8,11 @@ app.get('/hello',(req,res)=>{
 });
 app.post('/hello',(req,res)=>{
     console.log(req.query)
-    res.send({data : [{'book':'HelloWorld'}], success_s : 200, message: "Success"})
+    res.send({data : [{'book':'HelloWorld'}], success_s : 200, message: "Success123"})
+});
+app.post('/hello',(req,res)=>{
+    console.log(req.query)
+    res.send({data : [{'book':'HelloWorld'}], success_s : 200, message: "Success321"})
 });
 app.listen(process.env.PORT,()=>{
     console.log('Api hit recived')
